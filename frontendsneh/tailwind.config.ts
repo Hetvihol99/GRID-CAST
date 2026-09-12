@@ -1,0 +1,68 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        lime: "#4CAF4F",
+        "lime-hover": "#388E3C",
+        "lime-light": "#E8F5E9",
+        dark: "#263238",
+        "dark-secondary": "#37474F",
+        "card-gray": "#F5F7FA",
+        "gray-subtle": "#F5F7FA",
+        deep: "#FFFFFF",
+        panel: "#FFFFFF",
+        "panel-white": "#FFFFFF",
+        "panel-light": "#F5F7FA",
+        "panel-dark": "#263238",
+        "panel-border": "#E0E0E0",
+        solar: "#4CAF4F",
+        "solar-accent": "#4CAF4F",
+        wind: "#2196F3",
+        "wind-accent": "#2196F3",
+        alert: "#E53935",
+        "alert-bg": "#FFEBEE",
+        ink: "#263238",
+        "ink-muted": "#717171",
+        "ink-faint": "#89939E",
+        "ink-inverted": "#FFFFFF",
+        primary: "#4CAF4F",
+        secondary: "#263238",
+        info: "#2196F3",
+        silver: "#F5F7FA",
+        "grey-blue": "#ABBED1",
+        "neutral-grey": "#717171",
+        "neutral-dark": "#4D4D4D",
+      },
+      fontFamily: {
+        display: ["var(--font-inter)", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        body: ["var(--font-inter)", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        sans: ["var(--font-inter)", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+      },
+      borderRadius: {
+        sm: "6px",
+        md: "8px",
+        lg: "12px",
+        xl: "16px",
+        "2xl": "20px",
+        "3xl": "24px",
+        "4xl": "32px",
+      },
+      boxShadow: {
+        positivus: "0px 4px 14px rgba(171, 190, 209, 0.35)",
+        "positivus-sm": "0px 2px 6px rgba(171, 190, 209, 0.25)",
+        "positivus-lg": "0px 8px 24px rgba(171, 190, 209, 0.4)",
+        "positivus-lime": "0px 4px 12px rgba(76, 175, 79, 0.3)",
+        card: "0px 2px 4px rgba(171, 190, 209, 0.2), 0px 4px 8px rgba(171, 190, 209, 0.15)",
+        elevated: "0px 8px 16px rgba(171, 190, 209, 0.35)",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;

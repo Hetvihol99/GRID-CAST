@@ -1,0 +1,33 @@
+# Environments & Secrets
+.env
+.env*.local
+.env.*
+*.env
+!.env.example
+
+# Node / Next.js
+node_modules/
+**/node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+**/*/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+
+# Databases & Logs
+*.db
+*.sqlite3
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
